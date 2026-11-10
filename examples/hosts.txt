@@ -1,0 +1,5 @@
+# One endpoint per line: HOST, HOST:PORT, [IPV6]:PORT or an https:// URL.
+# Blank lines and anything after '#' are ignored. Replace these with your own.
+example.com
+www.python.org:443      # the port defaults to 443
+https://github.com/
