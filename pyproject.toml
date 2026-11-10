@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cert-expiry-watch"
+version = "0.1.0"
+description = "Find TLS certificates that are about to expire, on live hosts and in PEM files."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Narayana Vemburaj" }]
+dependencies = ["cryptography>=42"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.scripts]
+cert-expiry-watch = "cert_expiry_watch.cli:main"
+
+[tool.setuptools]
+packages = ["cert_expiry_watch"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
