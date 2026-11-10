@@ -51,7 +51,7 @@ To check live endpoints, list them in a file (see [`examples/hosts.txt`](example
 
 ```bash
 cert-expiry-watch --hosts examples/hosts.txt --warn-days 21
-cert-expiry-watch example.com internal.example.net:8443
+cert-expiry-watch example.com www.python.org:443
 ```
 
 ## Usage
